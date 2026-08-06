@@ -124,6 +124,6 @@ if predict:
 )
     prediction = model.predict(new_customer)
     if prediction[0] == 1:
-      st.error("⚠️ High Credit Risk")
+      st.error("High Credit Risk")
     else:
-      st.success("✅ Low Credit Risk")
+      st.success("Low Credit Risk")
